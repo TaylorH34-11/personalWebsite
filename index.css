@@ -1,0 +1,154 @@
+/*Primary container for the webpage, centers content and allows for vertical scrolling if content exceeds viewport height*/
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  /*AI (CHAT - GPT 5) GENERATED BACKGROUND GRADIENT: Modern Tech Look*/
+  background: linear-gradient(135deg, 
+  rgba(99,102,241,1) 0%, 
+  rgba(168,85,247,1) 50%, 
+  rgba(236,72,153,1) 100%
+);
+}
+
+/*Reduce Space between headers*/
+h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}  
+
+.topNav{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    border: 2px solid rgba(248,250,252,1);
+    border-radius: 15px;
+    background-color: rgba(240, 248, 255, 0.281);
+}
+
+.topNav a{
+    text-decoration: none;
+    color: rgba(248,250,252,1);
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.about {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    margin-top: 20px;
+    text-align: center;
+    width: 50vw;
+    /*AI (CHAT - GPT 5) GENERATED Text Color: Modern Tech Look*/
+    color: rgba(248,250,252,1); 
+}
+
+.contact{
+    text-align: center;
+    width: 50vw;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: rgba(248,250,252,1);
+    z-index: 2;
+}
+
+.contact i{
+    margin: 20px;
+    /*Scale Icons*/
+    font-size: 40px;
+    color: rgba(248,250,252,1);
+}
+
+.contact i:hover{
+    /*AI (CHAT - GPT 5) GENERATED Hover Effect: Modern Tech Look*/
+    color: rgba(255,255,255,1);
+    transform: scale(1.2);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/*Record of complete/incomplete coding projects, with links to github repos*/
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    background-color: rgba(33, 35, 35, 0.8);
+    padding: 40px 0;
+    z-index: 2;
+    margin-bottom: 40px;
+    border-radius: 25px;
+
+    /*vertical spacing between projects*/
+    gap: 30px; 
+
+    /*Update height based of the number of projects taking up the space*/
+    height: auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: rgba(248,250,252,1);
+}
+
+/*Ensure the title of the project does not appear as a link*/
+.portfolio a {
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(66, 145, 224);
+    border: 2px solid rgb(66, 145, 224, 0.3);
+    background-color: rgba(66, 145, 224, 0.1);
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.portfolio i{
+    font-size: 40px;
+    color: rgb(66, 145, 224);
+}
+
+.portfolio a:hover{
+    /*AI (CHAT - GPT 5) GENERATED Hover Effect: Modern Tech Look*/
+    color: rgb(168, 193, 219);
+    transform: translateY(-5px);
+    transform: scale(1.07);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.dividor{
+    background-image: linear-gradient(135deg, rgba(51, 58, 58, 0.9) 90%, rgba(77, 78, 78, 0.7) 90%, rgba(33, 35, 35, 0.8) 90%);
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    z-index: 1;
+
+    /*Extended room above and below resume*/
+    padding: 40px 0;
+}
+
+.resume{
+    text-align: center;
+    width: 70vw;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: rgba(248,250,252,1); 
+}
+
+.headshot {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+}
